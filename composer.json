@@ -21,7 +21,7 @@
             "ASSoftware\\Laravel\\":"packages/as-software/laravel/src",
             "App\\": "app/"
         },
-        "classmap": ["src","database"]
+        "classmap": ["src"]
     },
 	"extra": {
 		"laravel": {
