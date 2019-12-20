@@ -16,10 +16,18 @@
     ],
     "require": {
     },
+    "autoload-dev": {
+        "psr-4": {
+            "ASSoftware\\Laravel\\": "src/"
+        },
+        "classmap": [
+            "src"
+        ]
+    },
 	"extra": {
 		"laravel": {
 			"providers": [
-				"LaravelServiceProvider"
+				"ASSoftware/Laravel/LaravelServiceProvider"
 			]
 		}
 	},
