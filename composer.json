@@ -34,5 +34,10 @@
             ]
 		}
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "scripts": {
+        "post-package-install": [
+            "@laravel-package generate as-software/laravel"
+        ]
+    }
 }
