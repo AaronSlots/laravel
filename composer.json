@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ASSoftware\\Laravel\\":"packages/as-software/laravel/src/"
+            "ASSoftware\\Laravel\\":"packages\\as-software\\laravel\\src\\"
         }
     },
 	"extra": {
