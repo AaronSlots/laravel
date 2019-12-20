@@ -15,30 +15,22 @@
         "simple"
     ],
     "require": {
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "App\\": "app\\",
-            "classmap": ["src"]
-        }
+        "laravel/framework": "^6.2"
     },
     "autoload": {
         "psr-4": {
-            "ASSoftware\\Laravel\\":"packages\\as-software\\laravel\\src\\"
+            "ASSoftware\\Laravel\\": "/vendor/as-software/laravel/src/"
         }
     },
 	"extra": {
 		"laravel": {
 			"providers": [
-				"ASSoftware\\Laravel\\LaravelServiceProvider"
+				"ASSoftware/Laravel/LaravelServiceProvider"
             ],
             "dont-discover": [
                 "laravel/framework"
             ]
 		}
     },
-    "minimum-stability": "dev",
-    "require-dev": {
-        "laravel/framework": "^6.2"
-    }
+    "minimum-stability": "dev"
 }
