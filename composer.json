@@ -17,9 +17,9 @@
     "require": {
     },
     "autoload-dev": {
-        "psr-4": {
-            "ASSoftware\\Laravel\\": "as-software/laravel/src"
-        }
+        "classmap": [
+            "src"
+        ]
     },
 	"extra": {
 		"laravel": {
