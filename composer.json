@@ -18,11 +18,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "ASSoftware\\Laravel\\": "src/"
-        },
-        "classmap": [
-            "src"
-        ]
+            "ASSoftware\\Laravel\\": "vendor/as-software/laravel/src/"
+        }
     },
 	"extra": {
 		"laravel": {
