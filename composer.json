@@ -29,9 +29,6 @@
 			"providers": [
 				"ASSoftware\\Laravel\\LaravelServiceProvider"
             ],
-            "dont-discover": [
-                "laravel/framework"
-            ]
 		}
     },
     "minimum-stability": "dev"
