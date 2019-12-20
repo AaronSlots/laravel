@@ -19,7 +19,7 @@
 	"extra": {
 		"laravel": {
 			"providers": [
-				"ASSoftware/Laravel/LaravelServiceProvider"
+				"LaravelServiceProvider"
 			]
 		}
 	},
