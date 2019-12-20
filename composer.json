@@ -20,11 +20,11 @@
         "psr-4": {
             "App\\": "app/"
         },
-        "classmap": ["src"]
     },
     "autoload": {
         "psr-4": {
-            "ASSoftware\\Laravel\\":"src/"
+            "ASSoftware\\Laravel\\":"packages/as-software/laravel/src",
+            "classmap": ["src"]
         }
     },
 	"extra": {
