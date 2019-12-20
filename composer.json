@@ -27,13 +27,14 @@
 		"laravel": {
 			"providers": [
 				"ASSoftware\\Laravel\\LaravelServiceProvider"
-			]
+            ],
+            "dont-discover": [
+                "*"
+            ]
 		}
     },
     "minimum-stability": "dev",
-    "scripts": {
-        "post-create-project-cmd": [
-            "@php artisan package:discover"
-        ]
+    "require-dev": {
+        "laravel/framework": "^7.0@dev"
     }
 }
