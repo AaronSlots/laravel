@@ -15,6 +15,7 @@
         "simple"
     ],
     "require": {
+        "laravel/framework": "^6.2"
     },
     "autoload-dev": {
         "psr-4": {
@@ -27,6 +28,9 @@
 		"laravel": {
 			"providers": [
 				"ASSoftware\\Laravel\\LaravelServiceProvider"
+            ],
+            "dont-discover": [
+                "laravel/framework"
             ]
 		}
     },
