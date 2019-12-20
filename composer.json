@@ -18,7 +18,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "ASSoftware\\Laravel\\": "src/"
+            "ASSoftware\\Laravel\\": "as-software/laravel/src"
         }
     },
 	"extra": {
