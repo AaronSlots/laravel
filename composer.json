@@ -16,11 +16,6 @@
     ],
     "require": {
     },
-    "autoload-dev": {
-        "psr-4": {
-            "ASSoftware\\Laravel\\": "vendor/as-software/laravel/src"
-        }
-    },
 	"extra": {
 		"laravel": {
 			"providers": [
