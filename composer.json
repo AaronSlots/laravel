@@ -17,17 +17,22 @@
     "require": {
         "laravel/framework": "6.*"
     },
+    "autoload-dev": {
+        "psr-4": {
+            "ASSoftware\\Laravel\\":"packages/as-software/laravel/src",
+            "App\\": "app/"
+        },
+        "classmap": ["src"]
+    },
 	"extra": {
 		"laravel": {
+			"providers": [
+				"ASSoftware\\Laravel\\LaravelServiceProvider"
+            ],
             "dont-discover": [
                 "laravel/framework"
             ]
 		}
     },
-    "minimum-stability": "dev",
-    "scripts": {
-        "post-package-install": [
-            "@laravel-package generate as-software/laravel"
-        ]
-    }
+    "minimum-stability": "dev"
 }
