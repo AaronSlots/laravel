@@ -15,7 +15,6 @@
         "simple"
     ],
     "require": {
-        "laravel/framework": "6.*"
     },
     "autoload-dev": {
         "psr-4": {
