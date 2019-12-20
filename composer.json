@@ -1,0 +1,32 @@
+{
+    "name": "as-software/laravel",
+    "description": "An Laravel Extension for increasing your coding speed.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AaronSlots",
+            "email": "aaronslots@gmail.com"
+        }
+    ],
+    "keywords": [
+        "framework",
+        "laravel",
+        "simple"
+    ],
+    "require": {
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ASSoftware\\Laravel\\": "src/"
+        }
+    },
+	"extra": {
+		"laravel": {
+			"providers": [
+				"ASSoftware/Laravel/LaravelServiceProvider"
+			]
+		}
+	},
+	"minimum-stability": "dev"
+}
