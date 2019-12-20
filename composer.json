@@ -18,10 +18,10 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "ASSoftware\\Laravel\\":"packages/as-software/laravel/src",
+            "ASSoftware\\Laravel\\":"packages/as-software/laravel",
             "App\\": "app/"
         },
-        "classmap": ["src"]
+        "classmap": ["src","database"]
     },
 	"extra": {
 		"laravel": {
@@ -30,8 +30,5 @@
             ]
 		}
     },
-    "minimum-stability": "dev",
-    "scripts": {
-        "post-package-install": ["laravel-package generate vendor/as-software/laravel"]
-    }
+    "minimum-stability": "dev"
 }
