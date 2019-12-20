@@ -30,6 +30,12 @@
 				"ASSoftware\\Laravel\\LaravelServiceProvider"
 			]
 		}
-	},
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ]
+    },
 	"minimum-stability": "dev"
 }
