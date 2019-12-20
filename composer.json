@@ -25,10 +25,7 @@
 	"extra": {
 		"laravel": {
 			"providers": [
-				"ASSoftware/Laravel/LaravelServiceProvider"
-            ],
-            "dont-discover": [
-                "laravel/framework"
+				"ASSoftware\\Laravel\\LaravelServiceProvider"
             ]
 		}
     },
