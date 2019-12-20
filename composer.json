@@ -15,11 +15,10 @@
         "simple"
     ],
     "require": {
-        "laravel/framework": "^6.2"
     },
     "autoload-dev": {
         "psr-4": {
-            "ASSoftware\\Laravel\\":"vendor/as-software/laravel/src",
+            "ASSoftware\\Laravel\\":"packages/as-software/laravel/src",
             "App\\": "app/"
         },
         "classmap": ["src"]
@@ -34,5 +33,8 @@
             ]
 		}
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require-dev": {
+        "laravel/framework": "^6.2"
+    }
 }
