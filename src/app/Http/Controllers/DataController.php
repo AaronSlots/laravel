@@ -15,7 +15,7 @@ class DataController extends Controller
     public function index()
     {
         $data=Data::all();
-        return view('cms.data.index',['data'=>$data]);
+        return view('as-software/laravel::cms.data.index',['data'=>$data]);
     }
 
     /**
@@ -25,7 +25,7 @@ class DataController extends Controller
      */
     public function create()
     {
-        return view('cms.data.create');
+        return view('as-software/laravel::cms.data.create');
     }
 
     /**
@@ -45,6 +45,8 @@ class DataController extends Controller
         $data=new Data();
         $data->content=$content;
         $data->save();
+
+        return redirect()->route('cms.data.index');
     }
 
     /**
@@ -55,6 +57,9 @@ class DataController extends Controller
      */
     public function destroy(int $id)
     {
-        //
+        $data = Data::find($id);
+        $data->delete();
+
+        return redirect()->route('cms.data.index');
     }
 }

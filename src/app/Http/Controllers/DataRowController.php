@@ -16,7 +16,7 @@ class DataRowController extends Controller
     public function index(int $id)
     {
         $data=json_decode(Data::find($id)->content);
-        return view('cms.data.rows.index',['data' => $data]);
+        return view('as-software/laravel::cms.data.rows.index',['data' => $data]);
     }
 
     /**
@@ -28,7 +28,7 @@ class DataRowController extends Controller
     public function create(int $id)
     {
         $columns=array_keys(json_decode(Data::find($id)->content));
-        return view('cms.data.rows.create',['columns'=>$columns]);
+        return view('as-software/laravel::cms.data.rows.create',['columns'=>$columns]);
     }
 
     /**
@@ -69,7 +69,7 @@ class DataRowController extends Controller
             $values[$key]=$column[$row];
         }
         
-        return view('cms.data.rows.edit',['values'=>$values]);
+        return view('as-software/laravel::cms.data.rows.edit',['values'=>$values]);
     }
 
     /**
@@ -112,5 +112,7 @@ class DataRowController extends Controller
 
         $data->content=json_encode($content);
         $data->save();
+
+        return redirect()->route('cms.data.rows.index');
     }
 }

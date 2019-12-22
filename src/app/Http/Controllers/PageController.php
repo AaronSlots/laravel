@@ -15,7 +15,7 @@ class PageController extends Controller
     public function index()
     {
         $pages=Page::all();
-        return view('cms.pages.index',['pages'=>$pages]);
+        return view('as-software/laravel::cms.pages.index',['pages'=>$pages]);
     }
 
     /**
@@ -25,7 +25,7 @@ class PageController extends Controller
      */
     public function create()
     {
-        return view('cms.pages.create');
+        return view('as-software/laravel::cms.pages.create');
     }
 
     /**
@@ -70,7 +70,7 @@ class PageController extends Controller
     public function edit(string $name)
     {
         $page = Page::find($name);
-        return view('cms.pages.edit',['page'=>$page]);
+        return view('as-software/laravel::cms.pages.edit',['page'=>$page]);
     }
 
     /**

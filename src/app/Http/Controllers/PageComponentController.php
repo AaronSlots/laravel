@@ -16,7 +16,7 @@ class PageComponentController extends Controller
     public function index(string $name)
     {
         $page=Page::find($name);
-        return view('cms.pages.components',['page'=>$page]);
+        return view('as-software/laravel::cms.pages.components',['page'=>$page]);
     }
 
     /**

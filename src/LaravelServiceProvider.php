@@ -24,10 +24,7 @@ class LaravelServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
-        $this->publishes([
-            __DIR__.'/app' => app_path(),
-            __DIR__.'/resources/views' => resource_path('views')
-        ]);
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'as-software/laravel');
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
     }
 }
