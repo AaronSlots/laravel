@@ -15,7 +15,6 @@
         "simple"
     ],
     "require": {
-        "sven/artisan-view": "dev-master"
     },
     "autoload": {
         "psr-4": {
