@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Page extends Model
 {
-    protected $primaryKey = 'name';
+    protected $primaryKey = 'path';
     public $incrementing = false;
 
     public function components()
