@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace ASSoftware\LaravelApp\Http\Controllers;
 
 use App\Page;
 use Illuminate\Http\Request;
