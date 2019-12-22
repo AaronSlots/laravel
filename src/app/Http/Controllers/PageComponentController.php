@@ -2,9 +2,10 @@
 
 namespace ASSoftware\Laravel\App\Http\Controllers;
 
-use App\Page;
-use App\Component;
+use ASSoftware\Laravel\App\Page;
+use ASSoftware\Laravel\App\Component;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class PageComponentController extends Controller
 {

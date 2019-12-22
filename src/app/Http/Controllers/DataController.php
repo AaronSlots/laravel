@@ -2,8 +2,9 @@
 
 namespace ASSoftware\Laravel\App\Http\Controllers;
 
-use App\Data;
+use ASSoftware\Laravel\App\Data;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class DataController extends Controller
 {

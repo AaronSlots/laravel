@@ -3,7 +3,8 @@
 namespace ASSoftware\Laravel\App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Data;
+use ASSoftware\Laravel\App\Data;
+use App\Http\Controllers\Controller;
 
 class DataRowController extends Controller
 {

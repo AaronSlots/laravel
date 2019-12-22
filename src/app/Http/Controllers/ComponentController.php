@@ -2,8 +2,9 @@
 
 namespace ASSoftware\Laravel\App\Http\Controllers;
 
-use App\Component;
+use ASSoftware\Laravel\App\Component;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ComponentController extends Controller
 {
