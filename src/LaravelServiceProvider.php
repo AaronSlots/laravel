@@ -27,7 +27,7 @@ class LaravelServiceProvider extends ServiceProvider
         #$this->loadViewsFrom(__DIR__.'/resources/views','as-software/laravel');
         $this->publishes([
             __DIR__.'/app' => app_path(),
+            __DIR__.'/routes' => base_path('routes')
         ]);
-        $this->loadRoutesFrom('routes/web.php');
     }
 }
