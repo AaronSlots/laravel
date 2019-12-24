@@ -25,13 +25,14 @@ class LaravelServiceProvider extends ServiceProvider
     {
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
         $this->loadViewsFrom(__DIR__.'/resources/views', 'ASSoftware/Laravel');
+        rmdir(resource_path('views/cms'));
+        rmdir(resource_path('js'));
+        rmdir(resource_path('scss'));
         $this->publishes([
             __DIR__.'/resources/templates' => resource_path('views/cms'),
-            __DIR__.'/resources/sass' => resource_path('sass')
+            __DIR__.'/resources/js'=> resource_path('js'),
+            __DIR__.'/resources/sass'=>resource_path('sass'),
         ]);
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
-        exec('npm install jquery');
-        exec('npm install popper.js');
-        exec('npm install bootstrap');
     }
 }
