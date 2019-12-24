@@ -15,7 +15,6 @@
         "simple"
     ],
     "require": {
-        "twbs/bootstrap": "^4.0"
     },
     "autoload": {
         "psr-4": {

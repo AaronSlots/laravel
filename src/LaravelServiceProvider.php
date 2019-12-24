@@ -30,5 +30,6 @@ class LaravelServiceProvider extends ServiceProvider
             __DIR__.'/resources/sass' => resource_path('sass')
         ]);
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        exec('npm install bootstrap');
     }
 }
