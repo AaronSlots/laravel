@@ -30,8 +30,8 @@ class LaravelServiceProvider extends ServiceProvider
             __DIR__.'/resources/sass' => resource_path('sass')
         ]);
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        exec('npm require jquery');
+        exec('npm require popper.js');
         exec('npm install bootstrap');
-        exec('composer require jquery');
-        exec('composer require popper.js');
     }
 }
