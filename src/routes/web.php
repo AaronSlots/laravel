@@ -16,7 +16,7 @@ Route::group(['prefix' => '/cms','as'=>'cms.'], function() {
     Route::resource('data', 'ASSoftware\Laravel\App\Http\Controllers\DataController')->except(['show','edit','update']);
     Route::resource('data.rows', 'ASSoftware\Laravel\App\Http\Controllers\DataRowController')->except('show');
     Route::resource('components', 'ASSoftware\Laravel\App\Http\Controllers\ComponentController')->except('show');
-    Route::resource('pages.components', 'ASSoftware\Laravel\App\Http\Controllers\PageComponentController')->only(['store','index','destroy']);   
+    Route::resource('pages.components', 'ASSoftware\Laravel\App\Http\Controllers\PageComponentController')->only(['store','index','destroy']);
 });
 
-Route::get('/{page}','ASSoftware\Laravel\App\Http\Controllers\PageController@show')->name('page');
+Route::fallback()->get('/{page}','ASSoftware\Laravel\App\Http\Controllers\PageController@show')->name('page');
