@@ -16,7 +16,7 @@ class ComponentController extends Controller
     public function index()
     {
         $components=Component::all();
-        return view('as-software/laravel::cms.components.index',['components'=>$components]);
+        return view('ASSoftware/Laravel::cms.components.index',['components'=>$components]);
     }
 
     /**
@@ -26,7 +26,7 @@ class ComponentController extends Controller
      */
     public function create()
     {
-        return view('as-software/laravel::cms.components.create');
+        return view('ASSoftware/Laravel::cms.components.create');
     }
 
     /**
@@ -61,7 +61,7 @@ class ComponentController extends Controller
     public function edit(int $id)
     {
         $component=Component::find($id);
-        return view('as-software/laravel::cms.components.edit',['component'=>$component]);
+        return view('ASSoftware/Laravel::cms.components.edit',['component'=>$component]);
     }
 
     /**

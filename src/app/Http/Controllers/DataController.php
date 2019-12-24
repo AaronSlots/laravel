@@ -16,7 +16,7 @@ class DataController extends Controller
     public function index()
     {
         $data=Data::all();
-        return view('as-software/laravel::cms.data.index',['data'=>$data]);
+        return view('ASSoftware/Laravel::cms.data.index',['data'=>$data]);
     }
 
     /**
@@ -26,7 +26,7 @@ class DataController extends Controller
      */
     public function create()
     {
-        return view('as-software/laravel::cms.data.create');
+        return view('ASSoftware/Laravel::cms.data.create');
     }
 
     /**

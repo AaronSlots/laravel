@@ -17,7 +17,7 @@ class DataRowController extends Controller
     public function index(int $id)
     {
         $data=json_decode(Data::find($id)->content);
-        return view('as-software/laravel::cms.data.rows.index',['data' => $data]);
+        return view('ASSoftware/Laravel::cms.data.rows.index',['data' => $data]);
     }
 
     /**
@@ -29,7 +29,7 @@ class DataRowController extends Controller
     public function create(int $id)
     {
         $columns=array_keys(json_decode(Data::find($id)->content));
-        return view('as-software/laravel::cms.data.rows.create',['columns'=>$columns]);
+        return view('ASSoftware/Laravel::cms.data.rows.create',['columns'=>$columns]);
     }
 
     /**
@@ -69,8 +69,8 @@ class DataRowController extends Controller
         foreach ($data as $key => $column){
             $values[$key]=$column[$row];
         }
-        
-        return view('as-software/laravel::cms.data.rows.edit',['values'=>$values]);
+
+        return view('ASSoftware/Laravel::cms.data.rows.edit',['values'=>$values]);
     }
 
     /**

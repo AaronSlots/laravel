@@ -17,7 +17,7 @@ class PageComponentController extends Controller
     public function index(string $name)
     {
         $page=Page::find($name);
-        return view('as-software/laravel::cms.pages.components',['page'=>$page]);
+        return view('ASSoftware/Laravel::cms.pages.components',['page'=>$page]);
     }
 
     /**
@@ -41,7 +41,8 @@ class PageComponentController extends Controller
      * @param  string  $name
      * @return \Illuminate\Http\Response
      */
-    public function destroy(string $page, string $component)
+    public function destroy(string $page, string $component
+    )
     {
         $page=Page::find($name);
         $page->components()->detach($component);
