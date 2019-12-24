@@ -38,11 +38,13 @@ class ComponentController extends Controller
     public function store(Request $request)
     {
         $request->validate([
+            'name' => 'required|unique:pages|regex:/^[a-z.]+$/',
             'data_id' => 'required',
             'type' => 'required'
         ]);
 
         $component=new Component();
+        $component->name = $request->name;
         $component->data_id = $request->data_id;
         $component->type = $request->type;
         $page->save();

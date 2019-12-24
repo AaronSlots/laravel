@@ -17,8 +17,8 @@ class CreatePageComponentsTable extends Migration
             $table->bigIncrements('id');
             $table->string('page_path');
             $table->foreign('page_path')->references('path')->on('pages');
-            $table->unsignedBigInteger('component_id');
-            $table->foreign('component_id')->references('id')->on('components');
+            $table->unsignedBigInteger('component_name');
+            $table->foreign('component_name')->references('name')->on('components');
             $table->timestamps();
         });
     }

@@ -30,21 +30,21 @@ class PageComponentController extends Controller
     public function store(Request $request, string $name)
     {
         $page=Page::find($name);
-        $page->components()->attach($request->id);
+        $page->components()->attach($request->name);
         return redirect()->back();
     }
 
     /**
      * Remove the specified resource from storage.
      *
+     * @param  string  $page
      * @param  string  $name
-     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(int $id)
+    public function destroy(string $page, string $component)
     {
         $page=Page::find($name);
-        $page->components()->detach($request->id);
+        $page->components()->detach($component);
         return redirect()->back();
     }
 }

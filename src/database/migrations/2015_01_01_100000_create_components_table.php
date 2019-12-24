@@ -14,11 +14,11 @@ class CreateComponentsTable extends Migration
     public function up()
     {
         Schema::create('components', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->string('name')->primary();
             $table->unsignedBigInteger('data_id');
             $table->foreign('data_id')->references('id')->on('data');
-            $table->string('type');
-            $table->foreign('type')->references('type')->on('component_types');
+            $table->string('component_type');
+            $table->foreign('component_type')->references('type')->on('component_types');
             $table->timestamps();
         });
     }
