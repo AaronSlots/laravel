@@ -19,4 +19,4 @@ Route::group(['prefix' => '/cms','as'=>'cms.'], function() {
     Route::resource('pages.components', 'ASSoftware\Laravel\App\Http\Controllers\PageComponentController')->only(['store','index','destroy']);
 });
 
-Route::fallback()->get('/{page}','ASSoftware\Laravel\App\Http\Controllers\PageController@show')->name('page');
+Route::get('/{page}','ASSoftware\Laravel\App\Http\Controllers\PageController@show')->name('page');
