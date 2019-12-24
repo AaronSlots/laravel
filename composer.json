@@ -19,7 +19,6 @@
     "autoload": {
         "psr-4": {
             "ASSoftware\\Laravel\\": "src/",
-            "ASSoftware\\Laravel\\App\\": "src/app"
         },
         "classmap": ["src"]
     },
