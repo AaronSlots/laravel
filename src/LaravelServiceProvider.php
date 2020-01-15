@@ -25,7 +25,6 @@ class LaravelServiceProvider extends ServiceProvider
     {
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
         $this->loadViewsFrom(__DIR__.'/resources/views', 'ASSoftware/Laravel');
-        rmdir(resource_path('views/cms'));
         $this->publishes([
             __DIR__.'/resources/templates' => resource_path('views/cms'),
         ]);
